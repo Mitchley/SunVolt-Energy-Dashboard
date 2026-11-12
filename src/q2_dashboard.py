@@ -266,7 +266,7 @@ could convert a meaningful share of them.</p>
 
         fig = go.Figure(go.Bar(
             y=labels, x=rates, orientation="h", marker_color=colors,
-            text=[f"{pct(rr)} · {c}" for rr, c in zip(rates, counts)],
+            text=[f"{pct(rr)}  ({c} customers)" for rr, c in zip(rates, counts)],
             textposition="outside", cliponaxis=False,
             textfont=dict(size=11, color=NAVY),
             hovertemplate="%{y}<br>Purchase rate: %{x:.0%}<br>%{text}<extra></extra>",
